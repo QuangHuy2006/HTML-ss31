@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">This is a text</h1>
+    <button id="btn1">Hide text</button>
+    <button id="btn2">Show text</button>
+    <script>
+        const btn1 = document.querySelector("#btn1");
+        const btn2 = document.querySelector("#btn2");
+        const text = document.querySelector("#text");
+        btn1.addEventListener("click", function(){
+            text.style.display = "none";
+        })
+        btn2.addEventListener("click", function(){
+            text.style.display = "block";
+        })
+    </script>
+</body>
+</html>

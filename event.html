@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="handleclick()" id="btn-click">click</button>
+    <button id="btn-click-1">click 1</button>
+    <button id="btn-click-2">click 2</button>
+    <input type="text" id="email">
+    <script>
+        function handleclick(){
+            alert("click");
+        }
+        const btn = document.querySelector("#btn-click-2");
+        const input = document.querySelector("#email")
+        btn.addEventListener("click", function() {
+            alert(`afsa`);
+        })
+        input.addEventListener("input", function(){
+            console.log("input: ", input.value);
+            
+        })
+    </script>
+</body>
+</html>
